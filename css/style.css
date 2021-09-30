@@ -1,0 +1,231 @@
+@font-face {
+	font-family: ModernSans-Light;
+	src:url(../fontes/ModernSans-Light);
+}
+*
+{
+	margin:0;
+	padding:01;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	scroll-behavior: smooth;
+}
+p
+{
+	font-weight: 300;
+	color:rgb(0, 0, 0);
+	font-family: ModernSans-Light;
+}
+body
+{
+	min-height: 1000px;
+}
+.inicio
+{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../imagens/bg1.png);
+	background-size: cover;
+}
+.inicio .conteudo
+{
+	max-width: 900px;
+	text-align: center;
+}
+.inicio .conteudo h2
+{
+	font-size: 5em;
+	color: #96874f;
+	font-family: ModernSans-Light;
+}
+.inicio .conteudo p
+{
+	font-size: 1em;
+	color:#7C876E;
+	font-family: ModernSans-Light;
+}
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header.sticky
+{
+	background:#82A1C4;
+	padding: 10px 30px;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+	bottom: 770px;
+}
+header .barradenavegacao
+{
+	position: relative;
+	display: flex;	
+}
+header .barradenavegacao li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+header .barradenavegacao li a
+{
+	text-decoration: none;
+	color: #111;
+	font-weight: 300;
+	font-family: ModernSans-Light;
+}
+header .barradenavegacao li a:hover
+{
+	color: #82A1C4;
+}
+header.sticky .barradenavegacao li a
+{
+	color: #111;
+}
+header.sticky .barradenavegacao li a:hover
+{
+	color: #96874f;
+}
+section
+{
+	padding: 100px;
+}
+.row
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.row .col50
+{
+	position: relative;
+	width: 48%;
+}
+.titulo
+{
+	color: #111	;
+	font-size: 2em;
+	font-weight: 300;
+	font-family: ModernSans-Light;
+}
+.titulo span
+{
+	color: #82A1C4;
+	font-weight: 700;
+	font-size: 1.5em;
+	font-family: ModernSans-Light;
+}
+.row .col50 .cximg
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+.row .col50 .cximg img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.titulo
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.servicos .conteudo
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.servicos .conteudo .cx
+{
+	width: 340px;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.servicos .conteudo .cx .cximg
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.servicos .conteudo .cx .cximg img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cadas
+{
+	background:#96874f;
+	background-size: cover;
+}
+.form
+{
+	padding: 75px 50px;
+	background: #96874f;
+	box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+	max-width: 500px;
+	margin-top: 50px;
+}
+.form .cxinput
+{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.form .cxinput input
+{
+	width: 100%;
+	border: 1px solid #555;
+	padding: 10px;
+	color: #111;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+.form .cxinput input[type="submit"]
+{
+	font-size: 1em;
+	color: #fff;
+	background: #111;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	max-width: 100px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+.form .cxinput input[type="submit"]:hover
+{
+	letter-spacing: 3px;
+}
